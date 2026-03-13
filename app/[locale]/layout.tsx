@@ -15,8 +15,9 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "App",
-  description: "",
+  title: "Nestio - Έξυπνα gadgets για το σπίτι σου",
+  description:
+    "Ανακάλυψε έξυπνα gadgets για το σπίτι και την κουζίνα σου. Δωρεάν αποστολή σε παραγγελίες άνω των 30€.",
 };
 
 export const generateStaticParams = () => {
