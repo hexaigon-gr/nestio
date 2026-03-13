@@ -308,13 +308,79 @@
     "whyUs": "Why Choose Nestio?",
     "whyUsText": "We're not just another online store. We handpick every product, offer honest descriptions, and stand behind everything we sell with a 30-day money-back guarantee. Plus, with free shipping over €30 and fast delivery across Greece and Cyprus, shopping with us is effortless."
   },
+  "Reviews": {
+    "label": "What Our Customers Say",
+    "title": "Trusted by Thousands",
+    "review1": {
+      "text": "The sunset lamp completely transformed my living room. The warm glow creates the perfect atmosphere for relaxation. Shipping to Athens was surprisingly fast!",
+      "name": "Maria K.",
+      "location": "Athens, Greece"
+    },
+    "review2": {
+      "text": "I ordered the rotating snack tray for a dinner party and everyone asked where I got it. Amazing quality for the price. Will definitely order again.",
+      "name": "Dimitris P.",
+      "location": "Thessaloniki, Greece"
+    },
+    "review3": {
+      "text": "The galaxy projector is my daughter's favourite thing ever. She falls asleep watching stars every night. Wonderful product and beautiful packaging.",
+      "name": "Elena S.",
+      "location": "Nicosia, Cyprus"
+    },
+    "review4": {
+      "text": "Ordered the cable management box and fridge organizers together. Both arrived in perfect condition. My home has never been this organized!",
+      "name": "Nikos A.",
+      "location": "Heraklion, Greece"
+    }
+  },
+  "Newsletter": {
+    "label": "Stay in the Loop",
+    "title": "New Arrivals & Offers",
+    "description": "Be the first to discover new products and exclusive deals. We send one email per week — no spam, ever.",
+    "placeholder": "Enter your email",
+    "button": "Subscribe",
+    "success": "Thank you! You're now on the list.",
+    "privacy": "We respect your privacy. Unsubscribe anytime."
+  },
+  "WhyNestio": {
+    "label": "Why Choose Us",
+    "title": "Designed for the Way You Live",
+    "description": "We believe your home should be both beautiful and functional. Every product we offer is handpicked to bring joy and simplicity to your daily routine.",
+    "curated": {
+      "title": "Carefully Curated",
+      "description": "Every product is tested and selected by our team. We only sell what we'd use in our own homes."
+    },
+    "quality": {
+      "title": "Quality Materials",
+      "description": "Durable, well-crafted products made with materials that last. No cheap knock-offs, ever."
+    },
+    "care": {
+      "title": "We Truly Care",
+      "description": "From fast shipping across Greece & Cyprus to our 30-day guarantee — your satisfaction is everything."
+    }
+  },
   "Contact": {
+    "label": "Contact",
     "title": "Get in Touch",
     "description": "Have a question or need help with your order? We're here for you.",
-    "email": "Email",
-    "phone": "Phone",
-    "sendMessage": "Send Message",
-    "orContact": "Or reach us directly at"
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "hoursLabel": "Hours",
+    "hoursValue": "Mon–Fri 09:00–18:00",
+    "locationLabel": "Location",
+    "locationValue": "Athens, Greece",
+    "followUs": "Follow Us",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "How can we help?",
+      "message": "Message",
+      "messagePlaceholder": "Tell us more...",
+      "send": "Send Message",
+      "success": "Thank you! We'll get back to you within 24 hours."
+    }
   },
   "Returns": {
     "title": "Returns & Refunds",
