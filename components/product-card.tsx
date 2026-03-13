@@ -8,27 +8,8 @@ import { cn } from "@/lib/general/utils";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import {
-  ShoppingCart,
-  Package,
-  UtensilsCrossed,
-  Lamp,
-  Zap,
-} from "lucide-react";
-
-const categoryIcons: Record<string, React.ReactNode> = {
-  kitchen: <UtensilsCrossed className="h-12 w-12" />,
-  lifestyle: <Lamp className="h-12 w-12" />,
-  tech: <Zap className="h-12 w-12" />,
-  home: <Package className="h-12 w-12" />,
-};
-
-const categoryGradients: Record<string, string> = {
-  kitchen: "from-teal-500/80 to-teal-700/80",
-  lifestyle: "from-orange-400/80 to-teal-500/80",
-  tech: "from-teal-400/80 to-orange-500/80",
-  home: "from-orange-500/80 to-teal-600/80",
-};
+import { ProductImage } from "@/components/product-image";
+import { ShoppingCart } from "lucide-react";
 
 interface ProductCardProps {
   product: Product;
@@ -41,8 +22,6 @@ export function ProductCard({ product }: ProductCardProps) {
 
   const name = t(`${product.slug}.name`);
   const shortDescription = t(`${product.slug}.shortDescription`);
-  const icon = categoryIcons[product.category] ?? <Package className="h-12 w-12" />;
-  const gradient = categoryGradients[product.category] ?? "from-teal-500/80 to-orange-500/80";
 
   return (
     <Card
@@ -51,17 +30,10 @@ export function ProductCard({ product }: ProductCardProps) {
         "hover:scale-[1.02] hover:shadow-lg"
       )}
     >
-      {/* Image placeholder area */}
+      {/* Product image */}
       <Link href={`/products/${product.slug}`}>
-        <div
-          className={cn(
-            "relative flex h-56 items-center justify-center bg-linear-to-br",
-            gradient
-          )}
-        >
-          <div className="text-white/90 transition-transform duration-300 group-hover:scale-110">
-            {icon}
-          </div>
+        <div className="relative">
+          <ProductImage product={product} size="sm" />
           {product.featured && (
             <Badge className="absolute top-3 left-3 bg-orange-500 text-white hover:bg-orange-600">
               {t("featured")}
