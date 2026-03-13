@@ -1,14 +1,220 @@
 {
-  "HomePage": {
-    "title": "Welcome",
-    "description": "Get started by editing this page.",
-    "components": {
-      "title": "Available Components",
-      "button": "Button",
-      "input": "Input",
-      "card": "Card",
-      "label": "Label"
+  "Metadata": {
+    "title": "Nestio - Smart Gadgets for Your Home",
+    "description": "Discover smart gadgets for your home and kitchen. Free shipping on orders over €30."
+  },
+  "Nav": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About",
+    "contact": "Contact",
+    "cart": "Cart"
+  },
+  "Hero": {
+    "title": "Smart Gadgets for Your Home",
+    "subtitle": "Discover clever solutions that make everyday life easier. From the kitchen to the living room, we've got you covered.",
+    "cta": "Shop Now"
+  },
+  "Products": {
+    "title": "Our Products",
+    "viewAll": "View All",
+    "addToCart": "Add to Cart",
+    "outOfStock": "Out of Stock",
+    "featured": "Featured",
+    "categories": {
+      "all": "All",
+      "kitchen": "Kitchen",
+      "lifestyle": "Lifestyle",
+      "tech": "Tech"
+    },
+    "stove-gap-covers": {
+      "name": "Silicone Stove Gap Covers",
+      "shortDescription": "Stop crumbs and liquids from falling into the gap between your stove and countertop",
+      "description": "Say goodbye to the frustrating gap between your stove and countertop. These flexible silicone covers create a seamless barrier that prevents crumbs, spills, and debris from falling into that hard-to-clean space. Heat-resistant, easy to clean, and designed to fit most standard stoves. Simply trim to size and enjoy a cleaner kitchen instantly.",
+      "features": [
+        "Heat-resistant silicone up to 230°C",
+        "Flexible design fits gaps from 1-3 cm",
+        "Easy to remove and wash",
+        "Set of 2 covers included"
+      ]
+    },
+    "rotating-snack-tray": {
+      "name": "360° Rotating Snack Tray",
+      "shortDescription": "The ultimate party companion — a rotating tray with separate compartments for snacks and dips",
+      "description": "Elevate your hosting game with this clever rotating snack organizer. Featuring multiple compartments that spin 360°, everyone at the table can easily reach their favorite snacks. The removable inner trays make serving and cleanup a breeze. Perfect for movie nights, parties, and family gatherings. Made from food-safe BPA-free material.",
+      "features": [
+        "Smooth 360° rotation mechanism",
+        "5 removable compartments with lids",
+        "BPA-free food-safe material",
+        "Double-layer design for maximum capacity"
+      ]
+    },
+    "silicone-food-storage-bags": {
+      "name": "Reusable Silicone Food Storage Bags",
+      "shortDescription": "Ditch the plastic — these airtight silicone bags keep food fresh and the planet happy",
+      "description": "Make the switch from single-use plastic to these durable, reusable silicone food storage bags. Featuring a leak-proof seal that locks in freshness, they're perfect for storing leftovers, marinating meat, packing lunches, or freezing fruits and vegetables. Microwave and dishwasher safe for ultimate convenience. Each set includes 4 bags in different sizes.",
+      "features": [
+        "Airtight leak-proof seal",
+        "Microwave, freezer, and dishwasher safe",
+        "Set of 4 bags in different sizes",
+        "Eco-friendly BPA-free silicone"
+      ]
+    },
+    "portable-blender": {
+      "name": "Portable USB Blender",
+      "shortDescription": "Blend smoothies, shakes, and juices anywhere — just charge via USB and go",
+      "description": "Fresh smoothies aren't just for the kitchen anymore. This powerful portable blender lets you blend your favorite drinks wherever you are — at the gym, in the office, or on a hike. With sharp stainless steel blades and a rechargeable USB battery that lasts up to 15 blends per charge, you'll never settle for a store-bought smoothie again. Just add ingredients, press the button, and enjoy in 30 seconds.",
+      "features": [
+        "380ml capacity — perfect single serving",
+        "USB-C rechargeable — up to 15 blends per charge",
+        "6 stainless steel blades for smooth results",
+        "BPA-free Tritan material"
+      ]
+    },
+    "sunset-lamp": {
+      "name": "Sunset Projection Lamp",
+      "shortDescription": "Transform any room with a warm, golden sunset glow — perfect for photos and ambiance",
+      "description": "Bring the magic of golden hour indoors with this stunning sunset projection lamp. It casts a beautiful warm gradient of light onto your walls and ceiling, creating an instantly cozy and aesthetic atmosphere. Ideal for setting the mood, taking stunning photos for social media, or simply unwinding after a long day. Features 180° adjustable head and multiple color options.",
+      "features": [
+        "180° adjustable projection head",
+        "Multiple color modes including warm sunset and rainbow",
+        "USB powered — works with any USB port or power bank",
+        "LED technology — cool to touch and energy efficient"
+      ]
+    },
+    "led-strip-lights": {
+      "name": "Smart RGB LED Strip Lights",
+      "shortDescription": "Add vibrant color to any space with app-controlled, music-syncing LED strips",
+      "description": "Transform your room into an immersive experience with these smart RGB LED strip lights. Control millions of colors from your phone, sync them to your music, or set timers and schedules. The strong adhesive backing makes installation a breeze on any surface — behind your TV, under your bed, around your desk, or along your ceiling. Cut to any length you need.",
+      "features": [
+        "5 meters of flexible LED strip",
+        "App control with 16 million colors",
+        "Music sync mode with built-in microphone",
+        "Cuttable every 3 LEDs for custom lengths"
+      ]
     }
+  },
+  "Trust": {
+    "freeShipping": "Free Shipping",
+    "freeShippingDesc": "On all orders over €30",
+    "guarantee": "30-Day Guarantee",
+    "guaranteeDesc": "Not happy? Full refund, no questions asked",
+    "securePayments": "Secure Payments",
+    "securePaymentsDesc": "Your data is protected with SSL encryption",
+    "fastDelivery": "Fast Delivery",
+    "fastDeliveryDesc": "Delivered to your door in 2-5 business days"
+  },
+  "Cart": {
+    "title": "Your Cart",
+    "empty": "Your cart is empty",
+    "emptyDescription": "Looks like you haven't added anything yet. Browse our products and find something you'll love!",
+    "continueShopping": "Continue Shopping",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "shippingFree": "Free",
+    "shippingCost": "€3.50",
+    "total": "Total",
+    "checkout": "Proceed to Checkout",
+    "remove": "Remove",
+    "quantity": "Quantity"
+  },
+  "Checkout": {
+    "title": "Checkout",
+    "shipping": "Shipping",
+    "shippingInfo": "Shipping Information",
+    "fullName": "Full Name",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "city": "City",
+    "postalCode": "Postal Code",
+    "country": "Country",
+    "greece": "Greece",
+    "cyprus": "Cyprus",
+    "orderSummary": "Order Summary",
+    "total": "Total",
+    "pay": "Place Order",
+    "processing": "Processing...",
+    "successTitle": "Order Confirmed!",
+    "successDescription": "Thank you for your order. You will receive a confirmation email shortly.",
+    "cancelTitle": "Order Cancelled",
+    "cancelDescription": "Your order has been cancelled. No charges were made.",
+    "backToHome": "Back to Home",
+    "contactOrder": "Questions about your order? Contact us."
+  },
+  "About": {
+    "title": "About Nestio",
+    "description": "We find the smartest home gadgets so you don't have to.",
+    "story": "Our Story",
+    "storyText": "Nestio was born from a simple idea: everyday life at home can be better with the right tools. We scour the globe for clever, well-designed gadgets that solve real problems — from kitchen messes to cozy ambiance. Every product in our catalog has been personally tested and approved before it reaches your door.",
+    "mission": "Our Mission",
+    "missionText": "To make every home smarter, one gadget at a time. We believe great design shouldn't cost a fortune, and practical solutions should be accessible to everyone.",
+    "whyUs": "Why Choose Nestio?",
+    "whyUsText": "We're not just another online store. We handpick every product, offer honest descriptions, and stand behind everything we sell with a 30-day money-back guarantee. Plus, with free shipping over €30 and fast delivery across Greece and Cyprus, shopping with us is effortless."
+  },
+  "Contact": {
+    "title": "Get in Touch",
+    "description": "Have a question or need help with your order? We're here for you.",
+    "email": "Email",
+    "phone": "Phone",
+    "sendMessage": "Send Message",
+    "orContact": "Or reach us directly at"
+  },
+  "Returns": {
+    "title": "Returns & Refunds",
+    "description": "We want you to love your purchase. If you're not satisfied, we'll make it right.",
+    "policy": [
+      "You have 30 days from delivery to request a return",
+      "Items must be unused and in their original packaging",
+      "Contact us via email to initiate a return — we'll provide a shipping label",
+      "Refunds are processed within 5-7 business days after we receive the item",
+      "Shipping costs for returns are covered by the customer unless the item is defective",
+      "Defective or wrong items are replaced at no extra cost"
+    ]
+  },
+  "Terms": {
+    "title": "Terms & Conditions",
+    "description": "Please read these terms carefully before using our website or placing an order.",
+    "sections": [
+      {
+        "title": "General",
+        "content": "By accessing and using the Nestio website, you agree to be bound by these terms and conditions. We reserve the right to modify these terms at any time."
+      },
+      {
+        "title": "Orders & Pricing",
+        "content": "All prices are listed in Euros (€) and include VAT. We reserve the right to change prices without prior notice. An order is confirmed only after you receive a confirmation email."
+      },
+      {
+        "title": "Shipping & Delivery",
+        "content": "We ship to Greece and Cyprus. Standard delivery takes 2-5 business days. Free shipping is available on orders over €30. Orders under €30 are charged a flat €3.50 shipping fee."
+      },
+      {
+        "title": "Payment",
+        "content": "We accept major credit and debit cards. All payments are processed securely through our payment provider. Your card information is never stored on our servers."
+      },
+      {
+        "title": "Liability",
+        "content": "Nestio is not liable for any indirect, incidental, or consequential damages arising from the use of our products. Product images are for illustration purposes and may vary slightly from the actual item."
+      }
+    ]
+  },
+  "Footer": {
+    "about": "About",
+    "aboutText": "Nestio brings you the smartest home and kitchen gadgets. Handpicked, tested, and delivered to your door.",
+    "products": "Products",
+    "support": "Support",
+    "returns": "Returns & Refunds",
+    "terms": "Terms & Conditions",
+    "contact": "Contact",
+    "followUs": "Follow Us",
+    "rights": "All rights reserved.",
+    "madeWith": "Made with ❤️ in Greece"
+  },
+  "Common": {
+    "currency": "€",
+    "viewProduct": "View Product",
+    "relatedProducts": "You Might Also Like",
+    "backToProducts": "Back to Products"
   },
   "Admin": {
     "nav": {
