@@ -11,9 +11,10 @@
     "cart": "Cart"
   },
   "Hero": {
-    "title": "Smart Gadgets for Your Home",
-    "subtitle": "Discover clever solutions that make everyday life easier. From the kitchen to the living room, we've got you covered.",
-    "cta": "Shop Now"
+    "label": "Curated for Modern Living",
+    "title": "Elevate Your Everyday",
+    "subtitle": "Thoughtfully selected gadgets that bring elegance and efficiency to every corner of your home.",
+    "cta": "Explore Collection"
   },
   "Products": {
     "title": "Our Products",
@@ -25,7 +26,8 @@
       "all": "All",
       "kitchen": "Kitchen",
       "lifestyle": "Lifestyle",
-      "tech": "Tech"
+      "tech": "Tech",
+      "organization": "Organization"
     },
     "stove-gap-covers": {
       "name": "Silicone Stove Gap Covers",
@@ -91,6 +93,160 @@
         "App control with 16 million colors",
         "Music sync mode with built-in microphone",
         "Cuttable every 3 LEDs for custom lengths"
+      ]
+    },
+    "digital-meat-thermometer": {
+      "name": "Digital Meat Thermometer",
+      "shortDescription": "Instant-read precision for perfectly cooked meat every time — no more guessing",
+      "description": "Take the guesswork out of cooking with this ultra-fast digital meat thermometer. Get accurate temperature readings in just 2-3 seconds with a wide range of -50°C to 300°C. The foldable probe design makes it compact for storage, and the large backlit LCD display is easy to read even in low light. Perfect for grilling, roasting, frying, and BBQ.",
+      "features": [
+        "Instant read in 2-3 seconds",
+        "Wide range: -50°C to 300°C",
+        "Foldable probe for compact storage",
+        "Large backlit LCD display"
+      ]
+    },
+    "electric-milk-frother": {
+      "name": "Electric Milk Frother",
+      "shortDescription": "Create barista-quality frothy milk at home in seconds — for lattes, cappuccinos, and more",
+      "description": "Upgrade your morning coffee routine with this handheld electric milk frother. With a powerful motor and stainless steel whisk, it creates rich, creamy froth in seconds. Works with all types of milk including oat, almond, and coconut. USB rechargeable and dishwasher-safe whisk for easy cleaning. Compact enough to take anywhere.",
+      "features": [
+        "Powerful motor creates froth in 15 seconds",
+        "Works with all milk types",
+        "USB rechargeable — lasts 60+ uses per charge",
+        "Stainless steel whisk, dishwasher safe"
+      ]
+    },
+    "vegetable-spiralizer": {
+      "name": "Vegetable Spiralizer",
+      "shortDescription": "Turn any vegetable into healthy noodles in seconds — perfect for low-carb meals",
+      "description": "Make healthy eating fun and easy with this handheld vegetable spiralizer. Create beautiful zucchini noodles, carrot ribbons, cucumber spirals, and more in seconds. No electricity needed — just twist and go. Comes with 3 interchangeable blades for different spiral thicknesses. A must-have for anyone following a low-carb, keto, or plant-based diet.",
+      "features": [
+        "3 interchangeable blade sizes",
+        "Works with zucchini, carrots, cucumbers, and more",
+        "No electricity needed — manual twist design",
+        "BPA-free, dishwasher-safe materials"
+      ]
+    },
+    "handheld-vacuum-sealer": {
+      "name": "Handheld Vacuum Sealer",
+      "shortDescription": "Keep food fresh 5x longer with this wireless mini vacuum sealer — no bags needed",
+      "description": "Say goodbye to food waste with this compact handheld vacuum sealer. It removes air from bags and containers in seconds, keeping food fresh up to 5 times longer than traditional storage. The wireless, USB-rechargeable design means you can use it anywhere. Works with standard ziplock bags and special vacuum containers. Perfect for meal prep, sous vide cooking, and leftovers.",
+      "features": [
+        "Wireless USB-C rechargeable design",
+        "Works with ziplock bags and vacuum containers",
+        "One-button operation — seal in seconds",
+        "Compact and portable — fits in a drawer"
+      ]
+    },
+    "rain-cloud-diffuser": {
+      "name": "Rain Cloud Aroma Diffuser",
+      "shortDescription": "A mesmerizing rain cloud that fills your room with calming mist and essential oil aromas",
+      "description": "Experience the soothing sight and sound of rain right on your nightstand. This unique diffuser creates a beautiful water-drip effect that mimics rainfall while dispersing your favorite essential oils throughout the room. Features 7 color-changing LED lights and whisper-quiet operation. The perfect combination of aromatherapy and ambient decor for relaxation, meditation, or sleep.",
+      "features": [
+        "Realistic raindrop water drip effect",
+        "Essential oil compatible — aromatherapy ready",
+        "7 color-changing LED mood lights",
+        "Whisper-quiet operation — perfect for sleep"
+      ]
+    },
+    "crystal-touch-lamp": {
+      "name": "Crystal Touch Lamp",
+      "shortDescription": "Elegant diamond-cut crystal lamp with touch dimming — instant luxury for any room",
+      "description": "Add a touch of elegance to your space with this stunning crystal table lamp. The diamond-cut design refracts light into beautiful patterns on your walls and ceiling. Features 3 brightness levels controlled by a simple touch on top. USB rechargeable and cordless for placement anywhere. The warm golden glow creates the perfect ambient atmosphere for bedrooms, living rooms, or dining areas.",
+      "features": [
+        "Diamond-cut crystal body with light refraction",
+        "3-level touch dimming control",
+        "USB rechargeable — cordless design",
+        "Warm white LED — 8 hours battery life"
+      ]
+    },
+    "floating-wall-shelves": {
+      "name": "Floating Wall Shelves Set",
+      "shortDescription": "Invisible mount shelves that look like they're floating — clean, modern, and minimalist",
+      "description": "Transform your walls with these sleek floating shelves. The hidden bracket design creates the illusion of shelves floating on the wall, perfect for displaying plants, books, candles, or decor. Made from solid wood with a smooth matte finish. Set includes 3 shelves in different sizes. Easy to install with included hardware and template.",
+      "features": [
+        "Set of 3 shelves in different sizes",
+        "Hidden bracket invisible mount system",
+        "Solid wood with smooth matte finish",
+        "Holds up to 5kg per shelf"
+      ]
+    },
+    "moon-lamp-3d": {
+      "name": "3D Moon Lamp",
+      "shortDescription": "A realistic 3D-printed moon that glows with warm light — the perfect bedside companion",
+      "description": "Bring the moon into your room with this stunning 3D-printed moon lamp. Created using actual NASA moon surface data, every crater and detail is faithfully reproduced. Features touch control with 2 color modes (warm white and warm yellow) and adjustable brightness. Comes with a wooden stand and USB charging cable. A beautiful gift for space lovers and anyone who appreciates unique decor.",
+      "features": [
+        "3D printed using NASA lunar surface data",
+        "Touch control — 2 color modes + dimming",
+        "Rechargeable — 8-12 hours of light",
+        "Wooden stand included"
+      ]
+    },
+    "galaxy-star-projector": {
+      "name": "Galaxy Star Projector",
+      "shortDescription": "Turn your ceiling into a galaxy of stars and nebula clouds — mesmerizing night light",
+      "description": "Transform any room into a cosmic experience with this galaxy star projector. Projects a stunning display of stars, nebula clouds, and aurora effects onto your walls and ceiling. Features multiple color combinations, adjustable brightness, and a built-in timer. Control it via the included remote or pair it with the app for smart home integration. Perfect for bedrooms, home theaters, parties, or helping kids fall asleep.",
+      "features": [
+        "Stars + nebula + aurora projection effects",
+        "Remote control and app compatible",
+        "Built-in timer and auto-off function",
+        "Multiple color combinations and brightness levels"
+      ]
+    },
+    "mini-portable-projector": {
+      "name": "Mini Portable Projector",
+      "shortDescription": "Cinema-quality projection from your pocket — connect any device and watch anywhere",
+      "description": "Turn any wall into a movie screen with this ultra-compact portable projector. Despite its small size, it delivers a bright, clear image up to 120 inches. Connect via HDMI, USB, or wirelessly via WiFi to stream from your phone, laptop, or gaming console. Built-in speakers deliver decent audio, and the rechargeable battery gives you 2 hours of wireless viewing. Perfect for movie nights, gaming, presentations, or outdoor cinema.",
+      "features": [
+        "Projects up to 120-inch display",
+        "WiFi, HDMI, and USB connectivity",
+        "Built-in speaker and 2-hour battery",
+        "Compact pocket-size design"
+      ]
+    },
+    "wireless-charging-pad": {
+      "name": "Wireless Charging Pad",
+      "shortDescription": "Elegant wood-finish wireless charger — just place your phone and charge effortlessly",
+      "description": "Charge your phone the elegant way with this premium wireless charging pad. The natural wood grain finish blends beautifully into any desk, nightstand, or living room setup. Supports all Qi-enabled devices with fast charging up to 15W. Features anti-slip silicone surface, LED indicator, and over-charge protection. Simply place your phone down and pick it up fully charged.",
+      "features": [
+        "15W fast wireless charging",
+        "Natural wood grain finish",
+        "Anti-slip silicone surface",
+        "Over-charge and over-heat protection"
+      ]
+    },
+    "smart-wifi-plug": {
+      "name": "Smart WiFi Plug (2-Pack)",
+      "shortDescription": "Control any device from your phone — turn on lights, coffee makers, and more remotely",
+      "description": "Make any device smart with these WiFi-enabled smart plugs. Control your lamps, coffee maker, fan, or any appliance from your phone — anywhere in the world. Set schedules and timers so devices turn on and off automatically. Works with voice assistants and doesn't require a hub. The compact design doesn't block adjacent outlets. Set of 2 plugs included.",
+      "features": [
+        "Voice assistant compatible",
+        "Set schedules, timers, and countdowns",
+        "No hub required — connects directly to WiFi",
+        "Compact design — doesn't block other outlets"
+      ]
+    },
+    "stackable-fridge-organizer": {
+      "name": "Stackable Fridge Organizer (4-Pack)",
+      "shortDescription": "Maximize fridge space with clear stackable bins — see everything, waste nothing",
+      "description": "Take control of your fridge chaos with these transparent stackable organizer bins. Designed to fit perfectly in standard refrigerators, they keep fruits, vegetables, condiments, and leftovers neatly sorted and visible. The stackable design maximizes vertical space, while the built-in handles make it easy to pull bins out. BPA-free, freezer-safe, and dishwasher-safe. Set of 4 includes 2 large and 2 small bins.",
+      "features": [
+        "Set of 4 — 2 large + 2 small bins",
+        "Clear design — see contents at a glance",
+        "Stackable with built-in handles",
+        "BPA-free, freezer and dishwasher safe"
+      ]
+    },
+    "cable-management-box": {
+      "name": "Cable Management Box",
+      "shortDescription": "Hide ugly cables and power strips in one elegant box — instant desk and room cleanup",
+      "description": "Say goodbye to tangled cables and messy power strips. This sleek cable management box hides everything inside while keeping ventilation slots for heat dissipation. The minimalist design blends with any decor, and the easy-access lid lets you plug and unplug without hassle. Perfect for desks, TV setups, and living rooms. Available in a neutral finish that complements any space.",
+      "features": [
+        "Hides power strips and cables completely",
+        "Ventilation slots prevent overheating",
+        "Easy-access removable lid",
+        "Fits standard power strips up to 6 outlets"
       ]
     }
   },

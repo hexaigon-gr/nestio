@@ -7,7 +7,7 @@ import { ProductCard } from "@/components/product-card";
 import { cn } from "@/lib/general/utils";
 import { Button } from "@/components/ui/button";
 
-const categories = ["all", "kitchen", "lifestyle", "tech"] as const;
+const categories = ["all", "kitchen", "lifestyle", "tech", "organization"] as const;
 
 export function ProductsCatalog() {
   const t = useTranslations("Products");
@@ -21,7 +21,7 @@ export function ProductsCatalog() {
 
   return (
     <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-      <h1 className="mb-8 text-center text-3xl font-bold text-foreground sm:text-4xl">
+      <h1 className="mb-8 text-center font-serif text-3xl font-semibold text-charcoal sm:text-4xl">
         {t("title")}
       </h1>
 
@@ -35,8 +35,8 @@ export function ProductsCatalog() {
             className={cn(
               "transition-all duration-300",
               activeCategory === cat
-                ? "bg-teal-600 text-white hover:bg-teal-700"
-                : "hover:border-teal-600 hover:text-teal-600"
+                ? "bg-terracotta text-white hover:bg-terracotta/90"
+                : "hover:border-terracotta hover:text-terracotta"
             )}
             onClick={() => setActiveCategory(cat)}
           >

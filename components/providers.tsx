@@ -19,7 +19,7 @@ export const Providers = ({ children, messages, locale }: Props) => {
     <SessionProvider>
       <NextThemesProvider
         attribute="class"
-        defaultTheme="system"
+        defaultTheme="light"
         enableSystem
         disableTransitionOnChange
       >

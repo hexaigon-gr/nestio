@@ -5,9 +5,6 @@ import { useTranslations } from "next-intl";
 import { useCartStore } from "@/lib/stores/cart-store";
 import { Link } from "@/lib/i18n/navigation";
 import { cn } from "@/lib/general/utils";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { ProductImage } from "@/components/product-image";
 import { ShoppingCart } from "lucide-react";
 
@@ -24,57 +21,48 @@ export function ProductCard({ product }: ProductCardProps) {
   const shortDescription = t(`${product.slug}.shortDescription`);
 
   return (
-    <Card
-      className={cn(
-        "group overflow-hidden border border-border/50 transition-all duration-300",
-        "hover:scale-[1.02] hover:shadow-lg"
-      )}
-    >
-      {/* Product image */}
+    <div className="group">
+      {/* Product image - clean, no border radius */}
       <Link href={`/products/${product.slug}`}>
-        <div className="relative">
+        <div className="relative overflow-hidden bg-sand">
           <ProductImage product={product} size="sm" />
-          {product.featured && (
-            <Badge className="absolute top-3 left-3 bg-orange-500 text-white hover:bg-orange-600">
-              {t("featured")}
-            </Badge>
-          )}
+          <div className="absolute inset-0 bg-charcoal/0 transition-all duration-300 group-hover:bg-charcoal/5" />
         </div>
       </Link>
 
-      <CardContent className="flex flex-col gap-3 p-5">
-        <Link href={`/products/${product.slug}`} className="group/link">
-          <h3 className="line-clamp-1 text-lg font-semibold text-foreground transition-colors duration-300 group-hover/link:text-teal-600">
+      {/* Product info - minimal */}
+      <div className="mt-5 space-y-2">
+        <Link href={`/products/${product.slug}`}>
+          <h3 className="font-serif text-lg font-medium text-foreground transition-colors duration-300 group-hover:text-terracotta">
             {name}
           </h3>
         </Link>
 
-        <p className="line-clamp-2 text-sm text-muted-foreground">
+        <p className="line-clamp-2 text-[13px] font-light leading-relaxed text-warm-gray">
           {shortDescription}
         </p>
 
-        <div className="mt-auto flex items-center justify-between pt-2">
-          <span className="text-xl font-bold text-teal-600">
+        <div className="flex items-center justify-between pt-3">
+          <span className="text-base font-medium tracking-wide text-foreground">
             {tCommon("currency")}
             {product.price.toFixed(2)}
           </span>
 
           {product.inStock ? (
-            <Button
-              size="sm"
-              className="bg-teal-600 text-white hover:bg-teal-700 transition-colors duration-300"
+            <button
+              className="flex items-center gap-2 text-[12px] font-medium uppercase tracking-[0.15em] text-muted-foreground transition-colors duration-300 hover:text-terracotta"
               onClick={() => addItem(product)}
             >
-              <ShoppingCart className="mr-1.5 h-4 w-4" />
+              <ShoppingCart className="size-[14px]" />
               {t("addToCart")}
-            </Button>
+            </button>
           ) : (
-            <Button size="sm" variant="outline" disabled>
+            <span className="text-[12px] font-medium uppercase tracking-[0.15em] text-muted-foreground/50">
               {t("outOfStock")}
-            </Button>
+            </span>
           )}
         </div>
-      </CardContent>
-    </Card>
+      </div>
+    </div>
   );
 }

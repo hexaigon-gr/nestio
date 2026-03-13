@@ -4,7 +4,7 @@ export interface Product {
   price: number;
   cost: number;
   images: string[];
-  category: "kitchen" | "home" | "lifestyle" | "tech";
+  category: "kitchen" | "home" | "lifestyle" | "tech" | "organization";
   featured: boolean;
   inStock: boolean;
 }

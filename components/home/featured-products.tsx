@@ -9,15 +9,17 @@ export function FeaturedProducts() {
   const products = getFeaturedProducts();
 
   return (
-    <section className="py-16 md:py-24">
-      <div className="container mx-auto px-4">
-        <div className="mb-12 text-center">
-          <h2 className="text-3xl font-bold text-foreground md:text-4xl">
+    <section className="py-20 md:py-28">
+      <div className="mx-auto max-w-6xl px-6 lg:px-8">
+        {/* Section header - editorial style */}
+        <div className="mb-16 text-center">
+          <p className="mb-3 text-[12px] font-medium uppercase tracking-[0.25em] text-terracotta">
             {t("title")}
-          </h2>
+          </p>
+          <div className="mx-auto h-px w-12 bg-border" />
         </div>
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {products.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}

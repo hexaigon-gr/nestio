@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link, usePathname, useRouter } from "@/lib/i18n/navigation";
 import { useCartStore } from "@/lib/stores/cart-store";
-import { ShoppingCart, Menu, Globe, X } from "lucide-react";
+import { ShoppingCart, Menu, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -14,6 +14,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { cn } from "@/lib/general/utils";
+import { NestioLogo } from "@/components/nestio-logo";
 
 const navLinks = [
   { href: "/products" as const, key: "products" as const },
@@ -35,24 +36,21 @@ export function Navbar() {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 h-16 border-b border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
-      <div className="mx-auto flex h-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+    <nav className="fixed top-0 left-0 right-0 z-50 h-16 border-b border-border/40 bg-background/90 backdrop-blur-md">
+      <div className="mx-auto flex h-full max-w-6xl items-center justify-between px-6 lg:px-8">
         {/* Logo */}
-        <Link
-          href="/"
-          className="text-xl font-bold tracking-tight text-primary transition-colors duration-300 hover:text-primary/80"
-        >
-          Nestio
+        <Link href="/" className="transition-opacity duration-300 hover:opacity-70">
+          <NestioLogo size="sm" />
         </Link>
 
-        {/* Desktop nav links */}
-        <div className="hidden items-center gap-1 md:flex">
+        {/* Desktop nav links - minimal, spaced, uppercase */}
+        <div className="hidden items-center gap-8 md:flex">
           {navLinks.map((link) => (
             <Link
               key={link.key}
               href={link.href}
               className={cn(
-                "rounded-md px-3 py-2 text-sm font-medium transition-colors duration-300",
+                "text-[13px] font-medium uppercase tracking-[0.15em] transition-colors duration-300",
                 pathname === link.href
                   ? "text-foreground"
                   : "text-muted-foreground hover:text-foreground"
@@ -64,88 +62,70 @@ export function Navbar() {
         </div>
 
         {/* Desktop right actions */}
-        <div className="hidden items-center gap-2 md:flex">
-          {/* Language toggle */}
-          <Button
-            variant="ghost"
-            size="icon"
+        <div className="hidden items-center gap-3 md:flex">
+          <button
             onClick={toggleLocale}
-            className="size-9 transition-colors duration-300"
+            className="text-[12px] font-medium uppercase tracking-[0.15em] text-muted-foreground transition-colors duration-300 hover:text-foreground"
             aria-label="Toggle language"
           >
-            <Globe className="size-4" />
-          </Button>
+            {locale === "en" ? "EL" : "EN"}
+          </button>
 
-          {/* Cart */}
-          <Link href="/cart" className="relative">
-            <Button
-              variant="ghost"
-              size="icon"
-              className="size-9 transition-colors duration-300"
-              aria-label={t("cart")}
-            >
-              <ShoppingCart className="size-4" />
-              {itemCount > 0 && (
-                <span className="absolute -top-1 -right-1 flex size-5 items-center justify-center rounded-full bg-primary text-[10px] font-semibold text-primary-foreground">
-                  {itemCount > 99 ? "99+" : itemCount}
-                </span>
-              )}
-            </Button>
+          <div className="mx-1 h-4 w-px bg-border" />
+
+          <Link href="/cart" className="relative group">
+            <ShoppingCart className="size-[18px] text-muted-foreground transition-colors duration-300 group-hover:text-foreground" />
+            {itemCount > 0 && (
+              <span className="absolute -top-2 -right-2 flex size-4 items-center justify-center rounded-full bg-terracotta text-[9px] font-semibold text-white">
+                {itemCount > 99 ? "99+" : itemCount}
+              </span>
+            )}
           </Link>
         </div>
 
         {/* Mobile right actions */}
-        <div className="flex items-center gap-1 md:hidden">
-          {/* Cart (mobile) */}
+        <div className="flex items-center gap-2 md:hidden">
           <Link href="/cart" className="relative">
-            <Button
-              variant="ghost"
-              size="icon"
-              className="size-9 transition-colors duration-300"
-              aria-label={t("cart")}
-            >
-              <ShoppingCart className="size-4" />
-              {itemCount > 0 && (
-                <span className="absolute -top-1 -right-1 flex size-5 items-center justify-center rounded-full bg-primary text-[10px] font-semibold text-primary-foreground">
-                  {itemCount > 99 ? "99+" : itemCount}
-                </span>
-              )}
-            </Button>
+            <ShoppingCart className="size-[18px] text-muted-foreground" />
+            {itemCount > 0 && (
+              <span className="absolute -top-2 -right-2 flex size-4 items-center justify-center rounded-full bg-terracotta text-[9px] font-semibold text-white">
+                {itemCount > 99 ? "99+" : itemCount}
+              </span>
+            )}
           </Link>
 
-          {/* Hamburger → Sheet */}
           <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
             <SheetTrigger asChild>
               <Button
                 variant="ghost"
                 size="icon"
-                className="size-9 transition-colors duration-300"
+                className="size-9"
                 aria-label="Open menu"
               >
-                <Menu className="size-5" />
+                <Menu className="size-5 text-muted-foreground" />
               </Button>
             </SheetTrigger>
             <SheetContent
               side="right"
-              className="w-72 backdrop-blur-lg bg-background/95"
+              className="w-72 bg-background border-l border-border/40"
             >
               <SheetHeader>
-                <SheetTitle className="text-left text-lg font-bold text-primary">
-                  Nestio
+                <SheetTitle className="text-left">
+                  <NestioLogo size="sm" />
                 </SheetTitle>
               </SheetHeader>
 
-              <div className="mt-6 flex flex-col gap-1">
+              <div className="mt-10 flex flex-col gap-1">
                 {navLinks.map((link) => (
                   <Link
                     key={link.key}
                     href={link.href}
                     onClick={() => setMobileOpen(false)}
                     className={cn(
-                      "rounded-md px-4 py-3 text-base font-medium transition-colors duration-300",
+                      "px-4 py-3 text-[13px] font-medium uppercase tracking-[0.15em] transition-colors duration-300",
                       pathname === link.href
-                        ? "bg-accent text-foreground"
-                        : "text-muted-foreground hover:bg-accent hover:text-foreground"
+                        ? "text-foreground"
+                        : "text-muted-foreground hover:text-foreground"
                     )}
                   >
                     {t(link.key)}
@@ -153,16 +133,14 @@ export function Navbar() {
                 ))}
               </div>
 
-              {/* Language toggle in mobile menu */}
-              <div className="mt-6 border-t border-border pt-6 px-4">
-                <Button
-                  variant="outline"
+              <div className="mt-8 border-t border-border/40 pt-6 px-4">
+                <button
                   onClick={toggleLocale}
-                  className="w-full justify-start gap-3 transition-colors duration-300"
+                  className="flex items-center gap-3 text-[13px] font-medium uppercase tracking-[0.15em] text-muted-foreground transition-colors duration-300 hover:text-foreground"
                 >
                   <Globe className="size-4" />
                   {locale === "en" ? "Ελληνικά" : "English"}
-                </Button>
+                </button>
               </div>
             </SheetContent>
           </Sheet>

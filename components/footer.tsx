@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/lib/i18n/navigation";
 import { getFeaturedProducts } from "@/lib/data/products";
 import { Facebook, Instagram } from "lucide-react";
+import { NestioLogo } from "@/components/nestio-logo";
 
 function TikTokIcon({ className }: { className?: string }) {
   return (
@@ -24,26 +25,28 @@ export default function Footer() {
   const products = getFeaturedProducts();
 
   return (
-    <footer className="bg-foreground text-background">
-      <div className="container mx-auto px-4 py-12 md:py-16">
-        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
-          {/* Column 1: About */}
+    <footer className="border-t border-border/60 bg-charcoal text-cream">
+      <div className="mx-auto max-w-6xl px-6 py-16 lg:px-8 md:py-20">
+        <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
+          {/* Column 1: Brand */}
           <div>
-            <h3 className="mb-4 text-xl font-bold">Nestio</h3>
-            <p className="text-sm text-background/70 leading-relaxed">
+            <NestioLogo size="sm" variant="light" />
+            <p className="mt-5 text-[13px] font-light leading-relaxed text-cream/50">
               {t("aboutText")}
             </p>
           </div>
 
           {/* Column 2: Products */}
           <div>
-            <h3 className="mb-4 text-lg font-semibold">{t("products")}</h3>
-            <ul className="space-y-2.5">
+            <h3 className="mb-5 text-[12px] font-medium uppercase tracking-[0.2em] text-cream/70">
+              {t("products")}
+            </h3>
+            <ul className="space-y-3">
               {products.map((product) => (
                 <li key={product.id}>
                   <Link
                     href={`/products/${product.slug}`}
-                    className="text-sm text-background/70 transition-colors duration-300 hover:text-background"
+                    className="text-[13px] font-light text-cream/40 transition-colors duration-300 hover:text-cream/80"
                   >
                     {tProducts(`${product.slug}.name`)}
                   </Link>
@@ -54,12 +57,14 @@ export default function Footer() {
 
           {/* Column 3: Support */}
           <div>
-            <h3 className="mb-4 text-lg font-semibold">{t("support")}</h3>
-            <ul className="space-y-2.5">
+            <h3 className="mb-5 text-[12px] font-medium uppercase tracking-[0.2em] text-cream/70">
+              {t("support")}
+            </h3>
+            <ul className="space-y-3">
               <li>
                 <Link
                   href="/returns"
-                  className="text-sm text-background/70 transition-colors duration-300 hover:text-background"
+                  className="text-[13px] font-light text-cream/40 transition-colors duration-300 hover:text-cream/80"
                 >
                   {t("returns")}
                 </Link>
@@ -67,7 +72,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/terms"
-                  className="text-sm text-background/70 transition-colors duration-300 hover:text-background"
+                  className="text-[13px] font-light text-cream/40 transition-colors duration-300 hover:text-cream/80"
                 >
                   {t("terms")}
                 </Link>
@@ -75,7 +80,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/contact"
-                  className="text-sm text-background/70 transition-colors duration-300 hover:text-background"
+                  className="text-[13px] font-light text-cream/40 transition-colors duration-300 hover:text-cream/80"
                 >
                   {t("contact")}
                 </Link>
@@ -83,40 +88,42 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 4: Follow Us */}
+          {/* Column 4: Social */}
           <div>
-            <h3 className="mb-4 text-lg font-semibold">{t("followUs")}</h3>
-            <div className="flex gap-3">
+            <h3 className="mb-5 text-[12px] font-medium uppercase tracking-[0.2em] text-cream/70">
+              {t("followUs")}
+            </h3>
+            <div className="flex gap-4">
               <a
                 href="https://tiktok.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-background/10 transition-colors duration-300 hover:bg-background/20"
+                className="text-cream/40 transition-colors duration-300 hover:text-cream/80"
               >
-                <TikTokIcon className="h-5 w-5" />
+                <TikTokIcon className="size-[18px]" />
               </a>
               <a
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-background/10 transition-colors duration-300 hover:bg-background/20"
+                className="text-cream/40 transition-colors duration-300 hover:text-cream/80"
               >
-                <Instagram className="h-5 w-5" />
+                <Instagram className="size-[18px]" strokeWidth={1.5} />
               </a>
               <a
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-background/10 transition-colors duration-300 hover:bg-background/20"
+                className="text-cream/40 transition-colors duration-300 hover:text-cream/80"
               >
-                <Facebook className="h-5 w-5" />
+                <Facebook className="size-[18px]" strokeWidth={1.5} />
               </a>
             </div>
           </div>
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-12 flex flex-col items-center gap-2 border-t border-background/10 pt-8 text-sm text-background/50 sm:flex-row sm:justify-between">
+        <div className="mt-16 flex flex-col items-center gap-2 border-t border-cream/10 pt-8 text-[12px] font-light text-cream/30 sm:flex-row sm:justify-between">
           <p>&copy; 2026 Nestio. {t("rights")}</p>
           <p>{t("madeWith")}</p>
         </div>

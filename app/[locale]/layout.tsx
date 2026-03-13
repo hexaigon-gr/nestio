@@ -2,16 +2,22 @@ import type { Metadata } from "next";
 import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { setRequestLocale, getMessages } from "next-intl/server";
-import { Roboto } from "next/font/google";
+import { Outfit, Playfair_Display } from "next/font/google";
 import { routing } from "@/lib/i18n/routing";
 import { Providers } from "@/components/providers";
 import { BaseLayoutProps } from "@/types/page-props";
 import "./globals.css";
 
-const roboto = Roboto({
-  variable: "--font-roboto",
+const outfit = Outfit({
+  variable: "--font-outfit",
   subsets: ["latin"],
-  weight: ["400", "500", "700"],
+  weight: ["300", "400", "500", "600"],
+});
+
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -34,7 +40,7 @@ const LocaleLayout = async ({ children, params }: BaseLayoutProps) => {
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <body className={`${roboto.variable} font-sans antialiased`}>
+      <body className={`${outfit.variable} ${playfair.variable} font-sans antialiased`}>
         <Providers messages={messages} locale={locale}>
           {children}
         </Providers>
